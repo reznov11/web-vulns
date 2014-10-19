@@ -102,6 +102,7 @@ def checkingVSsecurity(url, username, wordlist):
 
   Author: Reznov - Pentester and hacker
   Website: http://xakepu.blogspot.com
+  Github: https://https://github.com/reznov11
   Twitter: @pentester11
 
   ''')
