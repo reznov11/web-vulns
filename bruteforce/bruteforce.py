@@ -166,14 +166,14 @@ def main():
     parser = optparse.OptionParser("\n--url <the link of the bruteforces page>" +\
       "\n--username <Dvwa username>"  "\n--password <wordlist to bruteforce>")
 
-    parser.add_option("--url: ", dest='url', type='string', \
-      help='past the link you want to bruteforce')
+    parser.add_option("--url", dest='url', type='string', \
+      help=':past the link you want to bruteforce')
 
-    parser.add_option("--username: ", dest='username', type='string', \
-      help='Dvwa username, the default is [admin]')
+    parser.add_option("--username", dest='username', type='string', \
+      help=':Dvwa username, the default is [admin]')
 
-    parser.add_option("--passlist: ", dest='wordlist', type='string', \
-      help='File contain the passwords to try.')
+    parser.add_option("--passlist", dest='wordlist', type='string', \
+      help=':File contain the passwords to try.')
 
 
     (options, args) = parser.parse_args()
