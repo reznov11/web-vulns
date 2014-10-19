@@ -15,8 +15,11 @@ web-vulns
 
 
   Author: Reznov - Pentester and hacker
+  
   Website: http://xakepu.blogspot.com
+  
   Github: http://www.github.com/reznov11
+  
   Twitter: @pentester11
 
 
