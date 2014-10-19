@@ -1,6 +1,4 @@
           
-          
-          
           xakep@pentester:~/Desktop/MyScripts/owasp/web-vulns/bruteforce$ python bruteforce.py -h
           
           Usage: 
