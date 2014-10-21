@@ -2,7 +2,7 @@
           xakep@pentester:~/Desktop/MyScripts/owasp/web-vulns/bruteforce$ python bruteforce.py -h
           
           Usage: 
-          --url <the link of the bruteforces page>
+          --url <the link of the page that you want to bruteforce>
           --username <Dvwa username>
           --password <wordlist to bruteforce>
           
