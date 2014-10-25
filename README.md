@@ -13,7 +13,7 @@ web-vulns
       | (_| | | | | (_| | | |_) |  __/ | | | ||  __/\__ \ ||  __/ |   
        \__,_|_| |_|\__,_| | .__/ \___|_| |_|\__\___||___/\__\___|_| 
  
-      Author: Reznov - Pentester and hacker
+      Author: Reznov
   
       Website: http://xakepu.blogspot.com
   
