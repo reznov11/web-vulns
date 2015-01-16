@@ -7,9 +7,8 @@
 
 import urllib2
 import optparse
-import sys
 import time
-import random
+from Tkinter import *
 
 try:
   from termcolor import colored,cprint
@@ -17,12 +16,14 @@ try:
   import gtk
   import cookielib
 
-except:
-  print "[!] Please install the modules that tool didn't found !!"
+except Exception as error :
+  print "\n\n[!] Please install the modules that tool didn't found !!\n", error
   exit(0)
 
 # here some defaults variables to use later on including colors .
-suc = " You've found it, well done "
+
+password = str("passwords")
+suc = " The password is: %s " %password
 fail = " Oooops, try again !! "
 response = 200
 error = 404
@@ -85,9 +86,9 @@ def failed():
 
 def checkingVSsecurity(url, username, wordlist):
 
-  print_white('''
+  print PURPLE + BOLD + '''
 
-  ______      ____        ___    
+   ______     ____        ___    
   |  _ \ \   / /\ \      / / \   
   | | | \ \ / /  \ \ /\ / / _ \  
   | |_| |\ V /    \ V  V / ___ \ 
@@ -102,10 +103,10 @@ def checkingVSsecurity(url, username, wordlist):
 
   Author: Reznov - Pentester and hacker
   Website: http://xakepu.blogspot.com
-  Github: https://https://github.com/reznov11
+  Github: https://github.com/reznov11
   Twitter: @pentester11
 
-  ''')
+  ''' + ENDC
 
   time.sleep(2)
 
@@ -148,7 +149,7 @@ def checkingVSsecurity(url, username, wordlist):
         fetch.open(url)
         fetch.select_form(nr=0)
         fetch.form['username'] = username
-        fetch.form['password'] = "passwords"
+        fetch.form['password'] = "password"
         fetch.submit()
 
       if "Welcome" in fetch.title():
@@ -179,7 +180,7 @@ def main():
     (options, args) = parser.parse_args()
     if(options.url == None) | (options.username == None) | (options.wordlist == None):
       print parser.usage
-      print "[!] Please fill the options ."
+      print RED +"\n[!] "+ ENDC + "Please fill the options ."
       exit(0)
 
     else:
@@ -196,10 +197,10 @@ def main():
     print BLUE + BOLD + "\n\n[!] The host name not correct %s" %url2 + BOLD + CYAN + ENDC
 
   except IOError:
-  	print "\n[!] Can't find %s !!." %password
+    print RED + "\n[!] " + ENDC + "Can't find %s !!." %password
   
   except KeyboardInterrupt:
-    print "\n[!] You closed the tool."
+    print RED + "\n[!] " + ENDC + "You closed the tool."
 
 if __name__ == "__main__":
   main()
