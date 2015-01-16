@@ -156,9 +156,11 @@ def checkingVSsecurity(url, username, wordlist):
         success()
         return
 
+      elif "Welcome" not in fetch.title():
+      	failed()
+      	return
       else:
-        failed()
-        exit(0)
+      	print_red("\nCheck your internet connection !!")
 
 def main():
 
