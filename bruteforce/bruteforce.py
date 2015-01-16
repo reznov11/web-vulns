@@ -23,7 +23,7 @@ except Exception as error :
 
 # here some defaults variables to use later on including colors .
 
-password = str("passwords")
+password = str("password")
 suc = " The password is: %s " %password
 fail = " Oooops, try again !! "
 response = 200
