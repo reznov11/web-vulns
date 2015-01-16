@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # Author: Reznov - Pentester and hacker
+# Tool: Automated DVWA bruteforcer
 # Website: http://xakepu.blogspot.com
-# Tool: Automated DVWA bruteforcer 
 # Github: http://www.github.com/reznov1
+# Twitter: @pentester11
 
 
 import urllib2
@@ -167,7 +168,7 @@ def main():
   try:
 
     parser = optparse.OptionParser("\n--url <the link of the bruteforces page>" +\
-      "\n--username <Dvwa username>"  "\n--password <wordlist to bruteforce>")
+      "\n--username <Dvwa username>"  "\n--passlist <wordlist to bruteforce>")
 
     parser.add_option("--url", dest='url', type='string', \
       help=':past the link you want to bruteforce')
