@@ -162,6 +162,7 @@ def checkingVSsecurity(url, username, wordlist):
       	return
       else:
       	print_red("\nCheck your internet connection !!")
+        exit(0)
 
 def main():
 
