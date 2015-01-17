@@ -17,7 +17,7 @@ from rainbow import colors
 
 
 respo = 200
-url = "http://192.168.43.5/dvwa/login.php"
+url = "http://"+sys.argv[1]+"/dvwa/login.php"
 username = "admin"
 password = "password"
 levels = ['high','medium','low']
@@ -33,12 +33,18 @@ def CheckLog():
   | |_| |\ V /    \ V  V / ___ \ 
   |____/  \_/      \_/\_/_/   \_\\
 
-   ____             _       _____
-  | __ ) _ __ _   _| |_ ___|  ___|__  _ __ ___ ___ _ __ 
-  |  _ \| '__| | | | __/ _ \ |_ / _ \| '__/ __/ _ \ '__|
-  | |_) | |  | |_| | ||  __/  _| (_) | | | (_|  __/ |   
-  |____/|_|   \__,_|\__\___|_|  \___/|_|  \___\___|_|  
-
+  ____                                          _ 
+ / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |
+| |   / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` |
+| |__| (_) | | | | | | | | | | | (_| | | | | (_| |
+ \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|
+                                                  
+                          _   _             
+  _____  _____  ___ _   _| |_(_) ___  _ __  
+ / _ \ \/ / _ \/ __| | | | __| |/ _ \| '_ \ 
+|  __/>  <  __/ (__| |_| | |_| | (_) | | | |
+ \___/_/\_\___|\___|\__,_|\__|_|\___/|_| |_|
+                                            
 
   Author: Reznov - Pentester and hacker
   Website: http://xakepu.blogspot.com
@@ -52,7 +58,7 @@ def CheckLog():
 		link = urllib2.urlopen(url)
 		
 		if link.code == respo:
-			print "\n[--] %s, Response: %s" %(url,str(respo))
+			print "\n[--] %s, Response: %s"%(url,str(respo))
 			time.sleep(1)
 			return
 		
@@ -96,20 +102,20 @@ def main():
 	print colors.YELLOW + "\n[!] You're inside the security panel > " + fetch.title() + colors.ENDC
 	time.sleep(2)
 	
-	print "\n[+] Now change the security level to %s ... "%sys.argv[1]
+	print "\n[+] Now change the security level to %s ... "%sys.argv[2]
 	time.sleep(2)
 
 	try:
 
 		fetch.select_form(nr=0)
-		new1 = fetch.form['security'] = [sys.argv[1]]
+		new1 = fetch.form['security'] = [sys.argv[2]]
 		new2 = fetch.form['security']
 		fetch.submit()
 		print "\n[*] Security now is: " + ', '.join(new2)
 		time.sleep(1)
 
 	except mechanize._form.ItemNotFoundError:
-		print "\n[-] Wrong level %s"%sys.argv[1]
+		print "\n[-] Wrong level %s"%sys.argv[2]
 		print "\n[+] Please choose one of these levels > " + colors.backMagenta + colors.BOLD +\
 		 ", ".join(levels) + colors.ENDC
 
@@ -138,7 +144,7 @@ def main():
 			fname = open('parse.html', "r+")
 			fname.write(pl)
 
-			print colors.UNDERL + "\nDone, please open %s to see the result"%fname
+			print colors.backBlack + "\nDone, please open parse.html to see the results" + colors.ENDC
 			time.sleep(2)
 
 			nex = raw_input('Press q|quit to exit: ')
