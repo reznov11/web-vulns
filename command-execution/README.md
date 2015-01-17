@@ -1,28 +1,36 @@
           
-		  Hi guys, this tool is to automate the command execution proccess for DVWA script.
+		  Hi guys, this tool is to automate the command execution process for DVWA script.
 
-		  Notice, that you have just to pick one of these levels to accomplish the proccess:
+		  Notice, that you have just to add the ip that hosting the script and choose one of 
+
+		  these levels to accomplish the process:
 
 		  ("high", "medium", "low").
 
-		  At the end, you can find the results inside an html file called parse.html,
+		  Eventually, you can find the results inside an html file called parse.html,
 
 		  here is an example from my terminal :
 
-          xakep@pentester:~/Desktop/myscripts/owasp/web-vulns/cexecution$ python cexecution.py low
+          xakep@pentester:~/Desktop/myscripts/owasp/web-vulns/cexecution$ python cexecution.py 192.168.43.5 low
           
-		   ______     ____        ___    
-		  |  _ \ \   / /\ \      / / \   
-		  | | | \ \ / /  \ \ /\ / / _ \  
-		  | |_| |\ V /    \ V  V / ___ \ 
-		  |____/  \_/      \_/\_/_/   \_\
 
-		   ____             _       _____
-		  | __ ) _ __ _   _| |_ ___|  ___|__  _ __ ___ ___ _ __ 
-		  |  _ \| '__| | | | __/ _ \ |_ / _ \| '__/ __/ _ \ '__|
-		  | |_) | |  | |_| | ||  __/  _| (_) | | | (_|  __/ |   
-		  |____/|_|   \__,_|\__\___|_|  \___/|_|  \___\___|_|  
-
+	       ______     ____        ___    
+	      |  _ \ \   / /\ \      / / \   
+	      | | | \ \ / /  \ \ /\ / / _ \  
+	      | |_| |\ V /    \ V  V / ___ \ 
+	      |____/  \_/      \_/\_/_/   \_\
+		  ____                                          _ 
+		 / ___|___  _ __ ___  _ __ ___   __ _ _ __   __| |
+		| |   / _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` |
+		| |__| (_) | | | | | | | | | | | (_| | | | | (_| |
+		 \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|
+		                                                  
+		                          _   _             
+		  _____  _____  ___ _   _| |_(_) ___  _ __  
+		 / _ \ \/ / _ \/ __| | | | __| |/ _ \| '_ \ 
+		|  __/>  <  __/ (__| |_| | |_| | (_) | | | |
+		 \___/_/\_\___|\___|\__,_|\__|_|\___/|_| |_|
+                                            
 
 		  Author: Reznov - Pentester and hacker
 		  Website: http://xakepu.blogspot.com
