@@ -1,0 +1,201 @@
+<style type="text/css">
+	
+.drops {
+
+	background-color: #F66D50;
+	margin: 20px 20px 20px -10px;
+	opacity: 0.8;
+	border-radius: 20px;
+	width: 89%;
+	padding: 10px 0px 14px 149px;
+
+}
+
+h3 {
+
+	text-align: center;
+	font-size: 18px;
+	color: #FFF;
+	font-family: inherit;
+	margin: 24px 0px 25px -169px;
+	font-weight: unset;
+}
+
+h4{
+
+	font-size: 13px;
+	color: rgba(210, 99, 85, 1);
+}
+
+.collect-selects{
+
+	position: relative;
+
+}
+
+.span4, .span6{
+
+	margin-top: 10px;
+
+}
+
+.collect-drops{
+
+	margin-left: -99px;
+
+}
+
+.span2 {
+ 
+    width: 142px;
+    margin-top: 10px;
+    margin-left: -133px;
+}
+
+select {
+
+	border-color: #C8C8EA;
+	background-color: bisque;
+	border-radius: 5px;
+
+}
+
+
+
+.btn, label {
+    
+    font-weight: bold;
+    margin-top: 23px;
+    width: 220px;
+
+}
+
+.img-circle{
+
+	vertical-align: center;
+
+}
+
+hr.fancy-line { 
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(215,215,215,0.75), rgba(0,0,0,0)); 
+    box-shadow: 0px -2px 4px rgba(136,136,136,0.75);
+}
+
+.span7 {
+
+    width: 792px;
+	height: 81px;
+	margin-top: 32px;
+	margin-left: -49px;
+}
+
+.about-us{
+
+	margin-left: 344px;
+
+}
+
+</style>
+
+<div class="about-us">
+	<img src="http://grs.gov.kg/uploads/a/admin/7e4d79beb2.jpg" alt="..." style="background-color: #FFF;" class="img-circle">
+</div>
+
+<div class="drops">
+
+	<h3> АДРЕСНЫЙ РЕГИСТР КЫРГЫЗСКОЙ РЕСПУБЛИКИ </h3>
+
+<div>
+
+<div class="collect-drops">
+	<div class="span4 col2">
+		
+		<h4>Область/Город республиканского значения</h4>
+		<select>
+		  <option value="9536">нет</option>
+		  <option value="5971">Баткенская Область</option>
+          <option value="7402">Бишкек</option>
+          <option value="5219">Джалал-Абадская Область</option>
+          <option value="4949">Иссык-Кульская Область</option>
+          <option value="5764">Нарынская Область</option>
+          <option value="7412">Ош</option>
+          <option value="6217">Ошская Область</option>
+          <option value="6802">Таласская Область</option>
+          <option value="6940">Чуйская Область</option>
+		</select>
+
+		<h4>Район/Город областного значения</h4>
+		 <select>
+		  <option selected="selected" value="0">нет</option>
+		</select>
+		
+		<h4>Айылный аймак/Город районного значения</h4>
+		 <select>
+		  <option selected="selected" value="0">нет</option>
+		</select>
+	</div>
+
+	<div class="span6 col2">
+		
+		<h4>Поселек/ПГТ/Село</h4>
+		<select>
+		  <option selected="selected" value="0">нет</option>
+		</select>
+	
+		<h4> Территориальная единица </h4>
+		 <select>
+		  <option selected="selected" value="0">нет</option>
+		</select>
+	
+		<h4>Территориальный объект</h4>
+		 <select>
+		  <option selected="selected" value="0">нет</option>
+		</select>
+	</div>
+
+	<div class="span2 col2">		
+		<h4>Тип улицы</h4>
+		<select>
+		  <option selected="selected" value="0">нет</option>
+		  <option value="7">аллея</option>
+          <option value="3">бульвар</option>
+          <option value="5">канал</option>
+          <option value="14">квартал</option>
+          <option value="13">контур</option>
+          <option value="19">кошара</option>
+          <option value="10">массив</option>
+          <option value="4">микрорайон</option>
+          <option value="18">мтф</option>
+          <option value="1">переулок</option>
+          <option value="16">площадь</option>
+          <option value="11">проезд</option>
+          <option value="2">проспект</option>
+          <option value="15">разъезд</option>
+          <option value="12">станция</option>
+          <option value="8">тупик</option>
+          <option value="6">улица</option>
+          <option value="20">урочище</option>
+          <option value="9">участок</option>
+          <option value="17">шоссе</option>
+		</select>
+
+        <label>Наименование</label>
+        <input id="street_name" value="" type="text">
+        <button type="submit" class="btn btn-warning">Submit</button>
+	</div>
+</div>
+
+<div class="span7 col7">
+	
+	<hr class="fancy-line"></hr>
+
+</div>
+
+<div class="span3 col3">
+	<textarea id="div-my-table"></textarea>
+</div>
