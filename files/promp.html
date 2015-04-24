@@ -1,0 +1,33 @@
+{% set intro = g.site_intro_text %}
+
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="/base/css/animations.css">
+
+</head>
+<div class="module-content box">
+  <header>
+    {% if intro %}
+      {{ h.render_markdown(intro) }}
+    {% else %}
+      <h1 class="page-heading"></h1>
+      <p>
+        {% trans %}
+        {% endtrans %}
+      </p>
+    {% endif %}
+  </header>
+
+  {% block home_image %}
+    <section class="featured media-overlay hidden-phone">
+      <img class="media-heading" src="/base/images/logo2.png">{% block home_image_caption %}
+      {% endblock %}</h2>
+      {% block home_image_content %}
+        <a class="media-image" href="#">
+          <img src="{{ h.url_for_static('/base/images/tn_01.jpg') }}" alt="Placeholder" width="420" height="220" />
+        </a>
+      {% endblock %}
+    </section>   
+  {% endblock %}
+
+</div>
