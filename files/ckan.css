@@ -7445,7 +7445,7 @@ h1 small,h2 small,h3 small,h4 small{
 	position:relative;
 	padding-top:10px;
 	padding-bottom:20px;
-	background:#ffffff url("../../../base/images/bg.png")
+	background:#eeeeee url("../../../base/images/bg.png")
 }
 
 [role=main]{
@@ -7660,7 +7660,7 @@ h1 small,h2 small,h3 small,h4 small{
 	-webkit-border-radius:3px 3px 0 0;
 	-moz-border-radius:3px 3px 0 0;
 	border-radius:3px 3px 0 0;
-	background-color:#272520;
+	background-color:#005d7a;
 	border-bottom:none
 }
 
@@ -7771,7 +7771,7 @@ h1 small,h2 small,h3 small,h4 small{
 	*zoom:1;
 	min-height:30px;
 	color:#ffffff;
-	background:#282828 url("../../../base/images/bg.png")
+	background:#003647 url("../../../base/images/bg.png")
 }
 
 .account-masthead:before,.account-masthead:after{
@@ -7871,7 +7871,7 @@ h1 small,h2 small,h3 small,h4 small{
 	*zoom:1;
 	min-height:55px;
 	color:#ffffff;
-	background:#F85050 url("../../../base/images/bg.png")
+	background:#005d7a url("../../../base/images/bg.png")
 }
 
 .masthead:before,.masthead:after{
@@ -7938,12 +7938,12 @@ h1 small,h2 small,h3 small,h4 small{
 }
 
 .masthead .navigation .nav-pills li a:hover,.masthead .navigation .nav-pills li.active a{
-	background-color:#F98484
+	background-color:#003647
 }
 
 .masthead .site-search{
-	display:none;
-	 margin:2px 8px 2px 0
+	margin:2px 8px 2px 0;
+	display: none;
 }
 
 .masthead .site-search input{
@@ -7962,7 +7962,7 @@ h1 small,h2 small,h3 small,h4 small{
 	*zoom:1;
 	min-height:55px;
 	color:#ffffff;
-	background:rgb(14,20,23) url("../../../base/images/bg.png");
+	background:#005d7a url("../../../base/images/bg.png");
 	padding:20px 0
 }
 
@@ -8034,8 +8034,7 @@ h1 small,h2 small,h3 small,h4 small{
 }
 
 .site-footer .site-search{
-	display:none;
-	 margin:2px 8px 2px 0
+	margin:2px 8px 2px 0
 }
 
 .site-footer .site-search input{
@@ -8066,7 +8065,7 @@ h1 small,h2 small,h3 small,h4 small{
 
 .footer-links{
 	margin-left:0;
-	display:none;
+	display: none;
 }
 
 .footer-links ul{
